@@ -8,11 +8,11 @@
     scroll-behavior: smooth;
 }
 :root{
-    --bg-color: #9c9193;
-    --second-bg-color: #000000;
-    --text-color: #400fb1d2;
-    --second-color:#bdbae7;
-    --main-color: #000808;
+    --bg-color: #618fac;
+    --second-bg-color: #3e6279;
+    --text-color: #ffffff;
+    --second-color:#ffffff;
+    --main-color: #000a0f;
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
@@ -287,7 +287,7 @@ header.sticky{
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.1), #ff004f);
+    background: linear-gradient(rgba(255, 255, 255, 0.1), #00b7ff);
     position: absolute;
     border-radius: 8px;
     left: 0;
