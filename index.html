@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dev Gabriel | Desenvolvedor Web</title>
     <meta name="description" content="Portfólio de Gabriel Damasceno, desenvolvedor em C#, VB.NET, ASP.NET, SQL e JavaScript. Veja minhas skills e projetos.">
+    <script>
+        (function () {
+            var theme = null;
+            try { theme = localStorage.getItem('theme'); } catch (e) {}
+            if (!theme && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) theme = 'dark';
+            if (theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+        })();
+    </script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -31,6 +39,10 @@
 
         </ul>
 
+
+        <button type="button" id="theme-toggle" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+            <i class='bx bx-moon'></i>
+        </button>
 
         <div class="bx bx-menu" id="menu-icon">
 
@@ -152,62 +164,62 @@
         </div>
 
         <div class="portfolio-content">
-            <div class="row">
-                <img src="portfolio1.jpg">
-                <div class="layer">
-                    <h5>Visual Design</h5>
-                    <p>CONFIRA EM BREVE MEUS PROJETOS.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
 
-            <div class="row">
-                <img src="portfolio2.jpg">
-                <div class="layer">
-                    <h5>Visual Design</h5>
-                    <p>CONFIRA EM BREVE MEUS PROJETOS.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+            <!-- A Fazer -->
+            <article class="project">
+                <div class="project-icon"><i class='bx bx-check-square'></i></div>
+                <h3>A Fazer</h3>
+                <p>Lista de tarefas full stack com cadastro e login. Cada usuário vê só as próprias tarefas, com filtros, destaque de prazos e modo claro/escuro. API REST em C# com JWT, Entity Framework Core e testes de integração.</p>
+                <div class="project-tags">
+                    <span>C#</span><span>ASP.NET Core</span><span>EF Core</span><span>JWT</span><span>React</span><span>xUnit</span>
                 </div>
-            </div>
+                <div class="project-links">
+                    <a target="_blank" rel="noopener" href="https://devgdamasceno.github.io/a-fazer-fullstack/"><i class='bx bx-link-external'></i> Demo</a>
+                    <a target="_blank" rel="noopener" href="https://github.com/DevGDamasceno/a-fazer-fullstack"><i class='bx bxl-github'></i> Código</a>
+                </div>
+            </article>
 
-            <div class="row">
-                <img src="portfolio3.jpg">
-                <div class="layer">
-                    <h5>Visual Design</h5>
-                    <p>CONFIRA EM BREVE MEUS PROJETOS.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+            <!-- Catálogo Digital RN -->
+            <article class="project">
+                <div class="project-icon"><i class='bx bx-mobile-alt'></i></div>
+                <h3>Catálogo Digital</h3>
+                <p>Cardápio digital para comércio local, em React Native. O cliente busca produtos, monta o carrinho (salvo no aparelho) e envia o pedido pronto pelo WhatsApp da loja.</p>
+                <div class="project-tags">
+                    <span>React Native</span><span>Expo</span><span>TypeScript</span><span>AsyncStorage</span>
                 </div>
-            </div>
+                <div class="project-links">
+                    <a target="_blank" rel="noopener" href="https://devgdamasceno.github.io/catalogo-digital-rn/"><i class='bx bx-link-external'></i> Demo</a>
+                    <a target="_blank" rel="noopener" href="https://github.com/DevGDamasceno/catalogo-digital-rn"><i class='bx bxl-github'></i> Código</a>
+                </div>
+            </article>
 
-            <div class="row">
-                <img src="portfolio4.jpg">
-                <div class="layer">
-                    <h5>Visual Design</h5>
-                    <p>CONFIRA EM BREVE MEUS PROJETOS.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+            <!-- Bet Acadêmica -->
+            <article class="project">
+                <div class="project-icon"><i class='bx bx-trophy'></i></div>
+                <h3>Bet Acadêmica</h3>
+                <p>Simulador de apostas esportivas feito em dupla, com saldo fictício. O administrador cadastra eventos e odds; o jogador aposta, vê o histórico e acompanha o ranking de saldo.</p>
+                <div class="project-tags">
+                    <span>React</span><span>React Router</span><span>Context API</span><span>JSON Server</span>
                 </div>
-            </div>
+                <div class="project-links">
+                    <a target="_blank" rel="noopener" href="https://github.com/DevGDamasceno/bet-academica"><i class='bx bxl-github'></i> Código</a>
+                </div>
+            </article>
 
-            <div class="row">
-                <img src="portfolio5.jpg">
-                <div class="layer">
-                    <h5>Visual Design</h5>
-                    <p>CONFIRA EM BREVE MEUS PROJETOS.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+            <!-- Barbearia -->
+            <article class="project">
+                <div class="project-icon"><i class='bx bx-cut'></i></div>
+                <h3>Barbearia</h3>
+                <p>Landing page para uma barbearia clássica, com serviços e preços, equipe, depoimentos, horários de funcionamento e agendamento. Layout responsivo e identidade visual própria.</p>
+                <div class="project-tags">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
                 </div>
-            </div>
-
-            <div class="row">
-                <img src="portfolio6.jpg">
-                <div class="layer">
-                    <h5>Visual Design</h5>
-                    <p>CONFIRA EM BREVE MEUS PROJETOS.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                <div class="project-links">
+                    <a target="_blank" rel="noopener" href="https://github.com/DevGDamasceno/barbearia"><i class='bx bxl-github'></i> Código</a>
                 </div>
-            </div>
+            </article>
 
         </div>
-
 
     </section>
     <!-- seçao de contato design classe contact-->
@@ -231,11 +243,12 @@
             </div>
         </div>
        <div class="contact-form">
-        <form action="enviar-email.php" method="POST">
-            <input type="name" placeholder="Seu Nome" required>
-            <input type="email" placeholder="Seu Endereço De Email" required>
-            <textarea name="" id="" cols="35" rows="10" placeholder="Como Posso Te Ajudar" required></textarea>
-            <input type="submit" value="Enviar Mensagem" class="submit" required>
+        <form id="contact-form">
+            <input type="text" id="form-nome" name="nome" placeholder="Seu Nome" aria-label="Seu nome" required>
+            <input type="email" id="form-email" name="email" placeholder="Seu Endereço De Email" aria-label="Seu e-mail" required>
+            <textarea id="form-mensagem" name="mensagem" cols="35" rows="10" placeholder="Como Posso Te Ajudar" aria-label="Sua mensagem" required></textarea>
+            <input type="submit" value="Enviar Mensagem" class="submit">
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
 
        </div> 
